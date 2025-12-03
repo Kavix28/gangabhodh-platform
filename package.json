@@ -1,16 +1,19 @@
 {
-  "name": "readie-course-platform",
-  "private": true,
+  "name": "gangabhodh-platform",
   "version": "1.0.0",
+  "private": true,
   "type": "commonjs",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite",
     "dev:server": "node server.js",
     "build": "vite build",
-    "lint": "eslint .",
     "start": "node server.js",
     "preview": "vite preview",
+    "lint": "eslint .",
     "seed": "node scripts/seed.js"
   },
   "dependencies": {
